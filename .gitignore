@@ -1,0 +1,16 @@
+# Kaggle data — large, and not ours to redistribute. Download it yourself,
+# see README. The full competition set is ~88,000 images.
+kaggle_dr/
+fid_real/
+
+# Generated outputs, checkpoints, models
+outputs*/
+*.pt
+*.pth
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+.pytest_cache/

@@ -1,0 +1,14 @@
+# Tested on CPU with torch 2.11.0+cpu / torchvision 0.26.0 (the versions
+# recorded in the original notebook outputs). Pin torch to the CPU wheel
+# if you have no GPU; otherwise install the CUDA build from pytorch.org.
+torch>=2.0
+torchvision>=0.15
+numpy
+pandas
+pillow
+matplotlib
+scikit-learn
+tqdm
+opencv-python
+pytorch-fid
+pytest
