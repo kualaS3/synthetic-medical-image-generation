@@ -1,4 +1,4 @@
-"""Download the Kaggle Diabetic Retinopathy data — once, then never again.
+"""Download the Kaggle Diabetic Retinopathy data, once, then never again.
 
 Usage::
 
@@ -9,11 +9,11 @@ Usage::
 
 The important bit: this script is idempotent. If ``kaggle_dr/`` already
 contains ``trainLabels.csv`` and at least one ``train_*`` folder with
-``.jpeg`` files, it prints that and exits immediately — it does NOT
+``.jpeg`` files, it prints that and exits immediately. It does NOT
 re-download the massive dataset.
 
 If you already have the data on your machine, just point ``main.py`` at
-it instead (``--data-dir``) — you do not need this script at all.
+it instead (``--data-dir``). You do not need this script at all.
 
 If the data is NOT present, the script downloads it with the Kaggle API,
 which needs two things you have to do once by hand:
@@ -24,7 +24,7 @@ which needs two things you have to do once by hand:
      to ``~/.kaggle/kaggle.json`` (or set KAGGLE_USERNAME /
      KAGGLE_KEY in the environment).
 
-The competition set is large (~88,000 images in total; the notebook
+The competition set is large (~88,000 images in total. The notebook
 indexed 35,126 train images), so the first download takes a while and
 needs several GB free. The downloaded zip is deleted after unzipping,
 unless you passed ``--keep-zip``.
