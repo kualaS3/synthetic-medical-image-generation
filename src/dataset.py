@@ -2,9 +2,9 @@
 
 - ``standardise_brightness`` and ``get_transforms`` are verbatim from the
   notebook (cells 7 and 8). The notebook defined ``standardise_brightness``
-  twice (cells 7 and 12, identical); it lives here exactly once.
+  twice (cells 7 and 12, identical). It lives here exactly once.
 - ``KaggleDRDataset`` was *used* in the notebook (cells 8 and 31) but its
-  class definition was missing from the notebook — the notebook only ran
+  class definition was missing from the notebook. The notebook only ran
   because of interactive state. It is reconstructed here from how it is
   used, and from the image-index code in notebook cells 10 and 26:
   read ``trainLabels.csv``, index ``train_*/*.jpeg`` by image name, expose
