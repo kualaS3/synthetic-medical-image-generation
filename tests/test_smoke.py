@@ -1,4 +1,4 @@
-"""Smoke tests — no Kaggle data needed, no training run.
+"""Smoke tests. No Kaggle data needed, no training run.
 
 Builds a tiny fake dataset (a few JPEGs + trainLabels.csv) in a temp
 directory and checks that the split code actually works: the dataset
