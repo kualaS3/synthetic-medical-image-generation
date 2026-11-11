@@ -1,13 +1,13 @@
 """End-to-end pipeline, mirroring the original notebook section by section.
 
-Usage (from the repo root, after downloading the Kaggle data — see README)::
+Usage (from the repo root, after downloading the Kaggle data. See README)::
 
     pip install -r requirements.txt
     python main.py --data-dir ./kaggle_dr
     python main.py --data-dir ./kaggle_dr --epochs 5 --skip-fid --skip-classifier
 
 This is a CPU-friendly run by default only in the sense that it will run on
-CPU; the full 25-epoch GAN + classifier run is slow without a GPU, exactly
+CPU. The full 25-epoch GAN + classifier run is slow without a GPU, exactly
 as it was in the notebook (which ran on CPU, torch 2.11.0+cpu).
 """
 import argparse
