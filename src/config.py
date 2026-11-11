@@ -28,7 +28,7 @@ CONFIG = {
     "epochs": 25,
     "batch_size": 10,  # Small batch size
     "lr": 0.0002,  # Standard DCGAN learning rate
-    "beta1": 0.5,  # Adam beta1 — paper recommends 0.5 for GANs
+    "beta1": 0.5,  # Adam beta1, paper recommends 0.5 for GANs
     "latent_dim": 64,  # Size of noise vector z
     "img_size": 128,  # Resize images
     "n_classes": 5,  # DR grades 0, 1, 2, 3, 4
