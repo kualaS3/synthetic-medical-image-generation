@@ -33,7 +33,7 @@ class Generator(nn.Module):
     - BatchNorm + ReLU after each block, Tanh at the end (output in [-1, 1])
 
     This maps to the 'Input Concatenation' conditioning strategy from
-    slide 57 — the condition c is concatenated with input z.
+    slide 57. The condition c is concatenated with input z.
     """
 
     def __init__(self, latent_dim, n_classes, img_size, ngf=64):
@@ -80,7 +80,7 @@ class Discriminator(nn.Module):
 
     Architecture:
     - Grade label is embedded to a small 16×16 map, then bilinearly upsampled
-      to match img_size — resolution-agnostic and memory-efficient
+      to match img_size, which keeps it resolution-agnostic and memory-efficient
     - 5 strided convolution blocks, each halving spatial resolution
     - LeakyReLU throughout, Sigmoid at the end
     """
@@ -124,7 +124,7 @@ class Discriminator(nn.Module):
 class DRClassifier(nn.Module):
     """
     ResNet-18 fine-tuned for 5-class DR grading.
-    Using transfer learning from ImageNet — a pragmatic choice given the
+    Using transfer learning from ImageNet, a pragmatic choice given the
     limited training data, especially for Grades 3 and 4.
     """
 
